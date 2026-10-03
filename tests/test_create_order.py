@@ -64,5 +64,5 @@ class TestCreateOrder:
 
         assert response.status_code == 500
 
-        # Сервер возвращает HTML-страницу ошибки, а не JSON
+        # Проверка тела ответа
         assert "Internal Server Error" in response.text
